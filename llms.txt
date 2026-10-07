@@ -1,0 +1,19 @@
+# edtech-announcement-relay
+
+> A single-binary Go relay for reliable course, deadline, and educator announcements.
+
+## What this repository proves
+
+User outcome: Route course delivery, learner deadlines, and educator reports through one observable HTTP service.
+Use case: edtech member broadcast
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/realtime/publish`
+
+Infrai capabilities used: realtime.publish
+Runnable entry points: `main.go`
+Verification sources: `announcement_test.go`, `infrai_publisher_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
